@@ -1,0 +1,89 @@
+html,
+body {
+  height: 100%; /* Set the height of the html and body to 100% */
+  margin: 0; /* Remove default margins */
+  box-sizing: border-box;
+}
+
+main {
+  flex: 1;
+}
+
+h1 {
+  color: #333;
+  font-size: 40px;
+}
+
+h2 {
+  color: #555;
+  font-size: 24px;
+}
+
+p {
+  color: #3d3d3d;
+}
+
+a {
+  color: #003670;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 2px solid #80bdff;
+}
+
+h3 {
+  font-size: 24px;
+  color: #333;
+  margin: 12px 0;
+}
+
+label {
+  flex: 0 0 150px; /* Fixed width for labels */
+  margin-right: 10px; /* Space between label and input */
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  flex: 1; /* Allow inputs to take up the remaining space */
+  padding: 8px; /* Padding inside the input fields */
+  border: 1px solid #ccc; /* Border for input fields */
+  border-radius: 4px; /* Rounded corners for input fields */
+}
+
+.App {
+  display: flex;
+  flex-direction: column; /* Arrange children in a column */
+  min-height: 100vh; /* Minimum height of the viewport */
+  background-color: #fff4e4; /* Set the background color */
+}
+
+.App > main {
+  padding: 20px;
+}
+
+.main-content {
+  flex: 1; /* This will make the main content take the remaining space */
+  padding: 20px; /* Padding for the main content */
+  background-color: #fff4e4; /* Background color for the main content */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  label {
+    flex: 1;
+  }
+
+  input {
+    flex: 2;
+  }
+}

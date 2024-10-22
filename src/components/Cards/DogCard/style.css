@@ -1,0 +1,61 @@
+.dog-card {
+  background-color: #f4e1c6 !important;
+  border-radius: 12px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for depth */
+  padding: 16px; /* Padding inside the card */
+  text-align: left; /* Align text to the left for better readability */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transition effects for hover */
+}
+
+.dog-card:hover {
+  transform: translateY(-4px); /* Lift effect on hover */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.dog-image {
+  width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 12px; /* Match card's corners */
+}
+
+.category {
+  display: flex;
+  white-space: nowrap;
+}
+
+.category-label,
+.category-value {
+  font-weight: bold;
+  color: #333;
+}
+
+.category-value {
+  margin-left: 5px;
+  font-weight: normal;
+  color: #303030;
+}
+
+.dog-name-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #024083;
+  border: none;
+  width: 100%;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  user-select: none;
+}
+
+.dog-name-button:hover {
+  background-color: #194370;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  .dog-cards-container {
+    grid-template-columns: 1fr;
+  }
+}

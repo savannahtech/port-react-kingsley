@@ -1,0 +1,50 @@
+/* Header.css */
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px; /* Adjust the padding as needed */
+  background-color: #ffebcc; /* Change the background color for distinction */
+  border-bottom: 2px solid #ffa500; /* Add a bottom border for separation */
+}
+
+.logo img {
+  padding: 10px; /* Increase padding to ensure touch target is at least 24px */
+  height: 20px; /* Set logo height to 20px */
+}
+
+.nav-container {
+  flex-grow: 1; /* Allow nav to grow */
+  text-align: center; /* Center the text */
+}
+
+.nav-container ul {
+  display: flex; /* Use flexbox for the list */
+  justify-content: center; /* Center the list items */
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.nav-container li {
+  margin: 0 16px; /* Add horizontal space between items */
+}
+
+/* Adjust the padding of links to increase touch target size */
+.nav-container a {
+  text-decoration: none; /* Remove underline from links */
+  padding: 12px 16px; /* Increase padding to ensure touch target is at least 24px */
+  color: #1a202c; /* Set link color */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-container a:hover {
+  color: #3182ce; /* Change link color on hover */
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  .nav-container li {
+    margin: unset;
+  }
+}

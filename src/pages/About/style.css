@@ -1,0 +1,59 @@
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  flex-grow: 1;
+}
+
+.link-text {
+  color: #004700;
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.custom-button {
+  background-color: #0056b3; /* Bootstrap Primary Color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.custom-button:hover {
+  background-color: #024083; /* Darker shade of blue */
+}
+
+/* Focus outline for accessibility */
+.custom-button:focus {
+  outline: 3px solid #80bdff; /* Light blue outline */
+  outline-offset: 2px; /* Offset to separate from button */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  #about-heading {
+    font-size: 24px;
+  }
+
+  .about-container > h2 {
+    font-size: 18px;
+    margin-top: 40px;
+  }
+
+  .button-container {
+    margin: 20px 0 0;
+  }
+
+  .custom-button {
+    font-size: 15px;
+  }
+}
